@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Nowruz</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+  <label class="switch">
+    <input type="checkbox" id="checkbox-toggle" onclick="myFunction()">
+    <span class="slider">
+      <div class="fish">
+        <div class="body">
+        </div>
+        <div class="eye"></div>
+        <div class="tail"></div>
+      </div>
+    </span>
+    <span class="wave"> </span>
+    <div class="boat">
+      <!-- <div class="bottom"></div> -->
+      <!-- <div class="mast"></div> -->
+      <!-- <img src="g.png" class="grass" alt=""> -->
+      <img src="https://i.ibb.co/C1xYf7t/g2.png" class="grass2" alt="">
+      <p class="garlic">🧄‍‍</p>
+      <p class="apple">🍎</p>
+      <p class="clock">⏰</p>
+      <!-- <img src="https://i.ibb.co/fSf7bRV/Pngtree-dollar-money-coin-3553198.png" class="coin"> -->
+      <!-- <div class="rectangle-sm"></div> -->
+      <!-- <div class="rectangle-lg"></div> -->
+    </div>
+    <div class="sky">
+      <!-- <div class="sun">
+        <div class="outer"></div>
+        <div class="inner"></div> -->
+        <!-- <p class="paragraph">Happy Nowruz</p> -->
+        <img src="https://i.ibb.co/Pr4TTvQ/back.png" alt="" class="paragraph1">
+        
+        <div class="year">
+          <img src="https://i.ibb.co/41Dr52g/1.png" alt="" class="paragraph2-1">
+          <img src="https://i.ibb.co/jJDZcTS/4.png" alt="" class="paragraph2-2">
+          <img src="https://i.ibb.co/0yD4Tgs/t.png" alt="" class="paragraph2-3">
+          <img src="https://i.ibb.co/41Dr52g/1.png" alt="" class="paragraph2-4">
+        </div>
+      </div>
+      <!-- <div class="cloud cloud1">
+        <div class="rect"></div>
+        <div class="circle circle-lg"></div>
+        <div class="circle circle-sm"></div>
+      </div>
+      <div class="cloud cloud2">
+        <div class="rect"></div>
+        <div class="circle circle-lg"></div>
+        <div class="circle circle-sm"></div>
+      </div> -->
+    </div>
+  </label>
+
+    <p class="prb" id="text" >Press the button</p>
+  <!-- <a href="https://dribbble.com/khatib" target="_blank">Design Inspiration from Mo(@Khatib)</a> -->
+</div>
+<script src="./main.js"></script>
+
+</script>
+
+<svg viewBox="0 0 180 100" width="100%">
+  <filter width="100%" height="100%" x="0%" y="0%" id="wave">
+    <feTurbulence type="fractalNoise" baseFrequency="0.000001" id="turbulence" numOctaves="1" result="turbulence">
+      <animate id="noiseAnimate" attributeName="baseFrequency" values="0.095,0.000001;0.025,0.2;" dur="1.4s" repeatCount="indefinite"></animate>
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" in2="warpOffset" scale="6" dy="100px" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+    <feGaussianBlur stdDeviation="0.5" />
+  </filter>
+<!-- partial -->
+
+</body>
+</html>
